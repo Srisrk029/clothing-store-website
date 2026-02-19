@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(239, 230, 245) !important;
+    position: relative;
+}
+.main{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-evenly;
+    gap:90px;
+}
+.items{
+    background:url('../IMAGES/Flower.jpg') no-repeat center center/cover;
+    display:flex;
+    width:150px;
+    height:150px;
+    padding-top:10px;
+    justify-content: center;
+    border-radius:50%;
+    background-color:rgb(253, 223, 238);
+    border:1px solid rgb(248, 41, 75);
+    box-shadow: 2px 2px 5px rgba(245, 105, 105, 0.309);
+}
+.f1{
+    text-decoration:none;
+    text-align:center;
+    color:#10559A;
+    font-weight:bold;
+    font-size:18px;
+}
+.collections {
+    display: flex;
+    flex-direction:row; 
+    overflow-x: auto;
+    scroll-behavior: smooth; 
+    align-items: center;
+    gap: 20px;
+}
+.item{
+    flex: 0 0 auto;
+}
+.my-modal .collections .item img {
+    width: 300px !important;     
+    height: 400px !important;
+    object-fit: cover;         
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+.item img{
+    width: 300px;                
+    height: 400px;               
+    object-fit: cover;           
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.item p {
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+  }
+.my-modal{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.my-modal-content{
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 12px;
+    text-align: center;
+} 
+.my-modal-content img{
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+} 
+.close{
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+} 
+.close:hover {
+    color: red;
+} 
+.close-btn{
+    background-color: #10559A;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+} 
+.close-btn:hover{
+    background-color: #0a3e7a;
+}
+  

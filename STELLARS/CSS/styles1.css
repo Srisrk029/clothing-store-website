@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    height:100vh;
+}
+body{
+    background:rgb(239, 230, 245) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+.logo{
+    width:60px;
+    height:60px;
+    margin:15px 15px;
+    transform: rotate(45deg);
+    box-shadow: 8px 8px 10px rgb(244, 189, 189), -4px -4px 8px rgb(167, 167, 248);
+}
+.header{
+    display:grid;
+    height:100px;
+    grid-template-columns: auto 1fr auto;
+    background:linear-gradient(to right,aliceblue,rgb(197, 164, 232));
+    transition: smooth 0.5s;
+}
+.heading{
+    margin-top:25px;
+    padding-left:20px;
+    color:rgb(67, 156, 125);
+    text-shadow: 4px 4px 2px rgb(249, 229, 154);
+    font-family: "Times New Roman", serif;
+    font-size:45px;
+    font-weight: bold;
+}
+.nav{
+    overflow:hidden;
+    background-image: linear-gradient(rgb(250, 152, 152),rgb(250, 250, 161),rgb(190, 165, 245));
+    display: flex;
+    justify-content:space-evenly; /* if you still want items aligned to the right */
+    gap: 20px;
+    padding: 14px 16px;
+}
+.nav a{
+    font-size:24px;
+    color:rgb(190, 18, 159);
+    text-align:center;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: #c7b7fc;
+    color: red;
+}
+.main{
+    width:100% ;
+    min-height:80vh;
+    background:rgba(187, 250, 196, 0);
+} 
+.title{
+    color: #924d99;
+    padding:50px 10px 20px;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 2px #f97bc4;
+    font-weight: bold;
+}
+.head{
+    color:rgb(192, 70, 111);
+    padding:25px;
+    font-size:35px;
+    font-weight:bold;
+}
+.para1{
+    font-size:16px;
+    text-align:center;
+    color:rgb(192, 70, 111);
+}
+.para{
+    color: #444444;
+    font-size:18px;
+    margin: 20px 30px;
+    line-height: 1.6;
+}
+ul {
+    margin-left: 40px;
+    list-style-type: square;
+    color: #3e3e3e;
+    font-family: 'Georgia', serif;
+}
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.catalogue img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-radius: 10px;
+    box-shadow:1px 4px 6px purple;
+}
+.catalogue p {
+    text-align: center;
+    margin-top: 10px;
+    color:#924d99;
+    font-weight: bold;
+}
+.video{
+    display: block;
+    margin: 60px auto;
+    max-width: 1000px;
+    padding: 20px;
+    text-align: center;
+}
+.video-caption{
+    color:rgb(192, 70, 111);
+    font-weight:bold;
+}
+.foot{
+    width:100%;
+    position:sticky;
+    background:#ffd7ee;
+    text-align: center;
+    color:#000;
+    line-height:0.5em;
+    padding:1rem;
+    margin-top:150px;
+}
+.f_text{
+    padding:2px 10px;
+    font-size:12px;
+    color:rgb(207, 173, 23);
+}
