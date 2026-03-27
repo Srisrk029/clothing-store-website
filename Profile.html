@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Home</title>
+    <style>
+        .pacifico-regular {
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img class="logo" src="../images/Star.jpg" alt="Star-Night">
+            <h1 class="heading">Sri's Stellar Boutique</h1>
+                <ul>
+                    <li><a href="Catalogue.html" target="_blank">Catalogue</a></li>
+                    <li><a href="#sign-form">SignUp</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+        </div>
+        <div class="content">  
+            <h1 class="pacifico-regular">Welcome to Stellar Boutique!!!</h1>
+            <p class="para pacifico-regular"><i>A Little Bit Of Luxury</i></p>
+            <img src="../images/boutique.jpg" alt="Attire">
+        </div>
+        <section id="sign-form">
+            <h2 class="sign">SignUp</h2>
+            <form class="signup-form" onsubmit="return validateSignUpForm()" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="email" name="email" id="s_email" placeholder="Email">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" name="password" id="s_password" placeholder="Create Password">
+            </div>  
+            <br>
+            <div class="form-group">
+                <input type="password" name="password" id="s_confirm" placeholder="Confirm Password">
+            </div>  
+            <br>
+            <input type="submit" class="bg-primary text-light" value="SignUp">
+            <br>
+            <p class="acc" style="text-align:center;">Already have an account? <a href="login.html"><b>Login</b></a></p>
+        </form>
+        </section>
+        <footer class="foot">
+            <h2 style="color:#10559A;margin-bottom:20px;">Contact Us</h2>
+            <p> WhatsApp us: 98765-43210</p>
+            <p> Email: boutiquess@gmail.com</p>
+            <p>For Enquiries - <a href="Contact.html" target="_blank">Click Here</a></p>
+            <p class="f_text">Copyright &copy 2025 stellar_boutique.com shop. All Rights Reserved</p>
+        </footer>
+    </div>
+    
+    <script src="../js/main.js" ></script>
+</body>
+</html>
